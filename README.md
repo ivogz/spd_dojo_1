@@ -3,37 +3,36 @@
 
 
 ## Integrantes 
-- Esteban Marcelo Quiroz  
+- Ivan Gonzalez, Emanuel Diaz, Leando Dominguez, Nahuel Gallardo
 
 
-## Proyecto: Contador binario.
-![Tinkercad](./img/ContadorBinario.png)
+## Proyecto: Semaforo para sordos.
+![Tinkercad](./img/arduino_grupal_1.png)
 
 
 ## Descripción
-En este parrafo deberan describir que funcion cumple su proyecto. Que solucion esta ofreciendo.
+Un semaforo que hace un ruido fuerte al estar en rojo.
 
 ## Función principal
-Esta funcion se encarga de encender y apagar los leds.
+Esta funcion se encarga de encender y apagar los leds en orden de semaforo emitiendo un ruido cuando esta en rojo.
 
-B0, B1, B2, B3 son #define que utilizamos para agregar los leds, asociandolo a pines de la placa arduino.
+tiempo_verde y tiempo_amarillo son int que tienen el dato de cuanto tiempo de delay va a tener la secuecia llamada.
 
-(Breve explicación de la función)
+Los parametros de secuencia_rojo_sonido son el tiempo por cuanto dura el sonido y por cuanto corta. Estos se repite 10 veces.
 
 ~~~ C (lenguaje en el que esta escrito)
-void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
+void secuencia()
 {
-  digitalWrite(B3,estado3);
-  digitalWrite(B2,estado2);
-  digitalWrite(B1,estado1);
-  digitalWrite(B0,estado0);
+  
+  secuencia_verde(tiempo_verde);
+  secuencia_amarilla(tiempo_amarillo);
+  secuencia_rojo_sonido(250, 250);
+  
 }
 ~~~
 
 ## :robot: Link al proyecto
-- [proyecto](https://www.tinkercad.com/things/aOYiibnDjWu)
-## :tv: Link al video del proceso
-- [video](https://www.youtube.com/watch?v=VyGjE8kx-O0)
+- [proyecto](https://www.tinkercad.com/things/kuVxSfXPISz?sharecode=K9BxnWGeQkrqQvVaxeRv2UcdXNd89HusIHRD_L90xJA)
 
 ---
 ### Fuentes
